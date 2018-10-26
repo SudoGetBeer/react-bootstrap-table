@@ -18,7 +18,7 @@ export class Filter extends EventEmitter {
       // value of the filter is an object
       let hasValue = true;
       for (const prop in value) {
-        if (!value[prop] || value[prop] === '') {
+        if (value[prop] === false || value[prop] === null  || value[prop] === undefined || value[prop] === '') {
           hasValue = false;
           break;
         }
