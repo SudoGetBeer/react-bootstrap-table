@@ -45,7 +45,6 @@ class SizePerPageDropDown extends Component {
           { currSizePerPage }
           <span>
           { ' ' }
-          <span className='caret'/>
           </span>
         </button>
         { renderOptions() }
